@@ -102,11 +102,11 @@ def scrape_info():
     # convert the table to an html file
     mars_facts_html = mars_facts_df.to_html("mars_facts.html", index=False)
     
-    # # convert dataframe to html string
-    # mars_facts_html = mars_facts_df.to_html()
+    # convert dataframe to html string
+    mars_facts_html = mars_facts_df.to_html()
 
-    # # clean up html table
-    # mars_facts_html.replace('\n', '')
+    # clean up html table
+    mars_facts_html.replace('\n', '')
     
     # visit Mars hemisphere url through splinter module
     hemi_url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'

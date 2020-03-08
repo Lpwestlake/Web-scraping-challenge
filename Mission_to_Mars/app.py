@@ -15,7 +15,7 @@ def index():
 
     # Find one record of data from the mongo database
     destination_data = mongo.db.collection.find_one()
-
+    print(destination_data)
     # Return template and data
     return render_template("index.html", mars=destination_data)
 
